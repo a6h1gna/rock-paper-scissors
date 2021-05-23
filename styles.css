@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body{
+    background-color: #194350 ;
+}
+
+header{
+    background-color: #ff8882;
+    padding: 1.5rem;
+}
+
+header > h1{
+    text-align: center;
+    color: #194350;
+}
+
+.score-board{
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    border: 3px solid white;
+    width: 200px;
+    margin: 1rem auto;
+    border-radius: 5px;
+    position: relative;
+}
+
+.label{
+    background: #ffc2b4;
+    font-size: 1rem;
+    color: #194350;
+    font-weight: bold;
+    padding: 0.3rem;
+}
+
+#user-label{
+    position: absolute;
+    top: 20px;
+    left: -20px;
+}
+
+#comp-label{
+    position: absolute;
+    top: 20px;
+    right:-25px;
+}
+
+#display-msg{
+    font-size: 2rem;
+    text-align: center;
+    color: #ffc2b4;
+    font-weight: bold;
+}
+
+.play-emoji{
+    margin-top: 1.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.emoji{
+    font-size: 7rem;
+    margin-right: 2rem;
+    border:3px solid black;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9dbeb9;
+    transition: all .3s ease;
+}
+
+.emoji:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
+.instructions{
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    background-color: #ff8882;
+    color: #194350;
+    border: none;
+    padding: .3rem;
+    border: 3px solid black;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+button:hover{
+    transform: scale(1.1);
+    border: none;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    margin-top: 1.6rem;
+}
+
+.win-glow{
+    border:5px solid #0cb40c;
+}
+
+.lose-glow{
+    border:5px solid #d11111;
+}
+
+.draw-glow{
+    border:5px solid #61615c;
+}
+
+@media (max-width:750px){
+    .emoji{
+        font-size: 5rem;
+        margin-right: 1rem;
+        border:2px solid black;
+        width: 150px;
+        height: 150px;
+    }
+    .instructions{
+        font-size: 1.5rem;
+    }
+    .win-glow{
+        border:5px solid #0cb40c;
+    }
+    
+    .lose-glow{
+        border:5px solid #d11111;
+    }
+    
+    .draw-glow{
+        border:5px solid #61615c;
+    }
+}
+@media (max-width:600px){
+    .emoji{
+        font-size: 4rem;
+        margin:0 .5rem;
+        border:2px solid black;
+        width: 100px;
+        height: 100px;
+    }
+    .instructions{
+        font-size: 1rem;
+    }
+    #display-msg{
+        font-size: 1rem;
+    }
+    .win-glow{
+        border:5px solid #0cb40c;
+    }
+    
+    .lose-glow{
+        border:5px solid #d11111;
+    }
+    
+    .draw-glow{
+        border:5px solid #61615c;
+    }
+}
